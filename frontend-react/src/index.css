@@ -1,0 +1,142 @@
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 10px;
+  padding: 0;
+
+  min-width: 320px;
+
+}
+
+header, main, footer {
+  margin: 20px auto;
+  padding: 15px;
+
+  max-width: 800px;
+  border-radius: var(--radius-md);
+}
+
+header {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.header-icon {
+  color: #ffffff;
+}
+
+main {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--shadow-card);
+}
+
+footer {
+  background-color: var(--color-text);
+  color: var(--color-surface-alt);
+  text-align: center;
+  font-size: 0.8em;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+nav a {
+  background-color: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary-hover);
+  margin: 0 10px;
+  padding: 8px 15px;
+  text-decoration: none;
+
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+tr th, tr td {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: 10px;
+  text-align: left;
+}
+
+tr th {
+  background-color: var(--color-surface-alt);
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-surface-alt);
+}
+
+input, button {
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.2s;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+form p {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 300px;
+}
+
+svg {
+  vertical-align: middle;
+  color: var(--color-primary);
+}

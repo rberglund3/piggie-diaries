@@ -1,0 +1,149 @@
+.pig-detail-page {
+    padding: var(--space-lg);
+}
+
+.back-button {
+    background: none;
+    color: var(--color-primary-hover);
+    border: none;
+    padding: 0;
+    margin-bottom: var(--space-md);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: none;
+    text-decoration: underline;
+}
+
+.pig-detail-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.pig-detail-photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.pig-detail-photo,
+.pig-detail-photo-placeholder {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--color-surface-alt);
+    color: var(--color-primary);
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.pig-detail-photo-pending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+
+.preview-unavailable-note {
+    font-size: 0.75em;
+    color: var(--color-text-muted);
+    text-align: center;
+    margin: var(--space-xs) 0 0;
+}
+
+.profile-image-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.profile-image-input-hidden {
+    display: none;
+}
+
+.profile-image-controls button {
+    padding: 4px 10px;
+    font-size: 0.85em;
+}
+
+.pig-detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+    margin-bottom: var(--space-xl);
+}
+
+.pig-detail-chart {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-card);
+}
+
+.weight-log {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-xl);
+}
+
+.weight-log table {
+    margin-bottom: 0;
+}
+
+.weight-log input[type="date"] {
+    width: auto;
+}
+
+.weight-log button {
+    padding: 4px 10px;
+    font-size: 0.85em;
+}
+
+.photo-gallery {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-xs);
+}
+
+.photo-item button {
+    background-color: var(--color-danger);
+    width: 100%;
+}
+
+.photo-upload {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+@media (max-width: 700px) {
+    .pig-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}

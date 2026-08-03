@@ -1,0 +1,7 @@
+.overview-page {
+    padding: var(--space-lg);
+}
+
+.metrics-table {
+    margin-top: var(--space-lg);
+}
